@@ -1,7 +1,8 @@
 .slides-home {
 	position: relative;
-	width: 100vw;
-	height: 431px;
+	/* width: 100vw; */
+	/* height: 431px; */
+	height: inherit;
 }
 .slider-item {
 	position: absolute;
@@ -35,7 +36,7 @@
 	}
 }
 
-.carouse-ind-con {
+.carousel-dot-container {
 	position: absolute;
 	width: 160px;
 	bottom: 10px;

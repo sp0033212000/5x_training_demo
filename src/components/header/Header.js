@@ -9,19 +9,19 @@ const Header = () => {
 		<header className="nav-space">
 			<nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-xl navbar-light overwrite-nav">
 				<div className="container-fluid nav-border pl-3 pr-3">
-					<a href="/" className="navbar-brand logo-link">
+					<div href="/" className="navbar-brand logo-link">
 						<img
 							src={require("../../assets/imgs/navbar/logo.png")}
 							alt="網頁設計前後端課程 | 五倍紅寶石"
 						/>
-					</a>
+					</div>
 					<div
 						className="collapse navbar-collapse flex-row-reverse "
 						id="mobile-dropdown"
 					>
 						<ul className="navbar-nav">
 							<li className="nav-item text-center">
-								<a
+								<div
 									className="nav-link is-event"
 									href="https://iamcoding.tw/"
 									target="_blank"
@@ -30,10 +30,10 @@ const Header = () => {
 										<FontAwesomeIcon icon={far.faGem} />
 									</span>
 									線上課程
-								</a>
+								</div>
 							</li>
 							<li className="nav-item text-center">
-								<a
+								<div
 									className="nav-link is-event"
 									href="https://astro.5xruby.tw/"
 									target="_blank"
@@ -42,10 +42,10 @@ const Header = () => {
 										<FontAwesomeIcon icon={far.faCompass} />
 									</span>
 									ASTRO Camp
-								</a>
+								</div>
 							</li>
 							<li className="nav-item text-center">
-								<a className="nav-link is-event" href="/fullstack-landing">
+								<div className="nav-link is-event" href="/fullstack-landing">
 									<svg
 										className="icon-bolt"
 										xmlns="http://www.w3.org/2000/svg"
@@ -69,32 +69,32 @@ const Header = () => {
 											alt="全方位網頁設計前後端實戰 - 假日班 | 五倍紅寶石"
 										/>
 									</span>
-								</a>
+								</div>
 							</li>
 							<li className="nav-item text-center">
-								<a className="nav-link" href="/talks">
+								<div className="nav-link" href="/talks">
 									短期課程
-								</a>
+								</div>
 							</li>
 							<li className="nav-item text-center">
-								<a className="nav-link" href="https://dev.5xruby.tw">
+								<div className="nav-link" href="https://dev.5xruby.tw">
 									專案開發
-								</a>
+								</div>
 							</li>
 							<li className="nav-item text-center">
-								<a className="nav-link" href="/training">
+								<div className="nav-link" href="/training">
 									企業代訓
-								</a>
+								</div>
 							</li>
 							<li className="nav-item text-center">
-								<a className="nav-link " href="/space">
+								<div className="nav-link " href="/space">
 									空間租借
-								</a>
+								</div>
 							</li>
 							<li className="nav-item text-center">
-								<a className="nav-link " href="/posts">
+								<div className="nav-link " href="/posts">
 									最新消息
-								</a>
+								</div>
 							</li>
 						</ul>
 					</div>

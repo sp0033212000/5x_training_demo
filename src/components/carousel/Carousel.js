@@ -4,15 +4,13 @@ import silentStateCore from "../../utils/silent.state";
 import "../../css/carousel.css";
 import CarouselIndicator from "./CarouselIndicator";
 
-const silentState = new silentStateCore();
-
-const Carousel = ({ data }) => {
+const Carousel = ({ data, repTime, ItemComponent, indicatorClass }) => {
 	const [currIndex, setCurrIndex] = useState(0);
 	const [timer, setTimer] = useState(null);
 
 	useEffect(() => {
 		clearInterval(timer);
-		setTimer(setInterval(timerCounter, 5000));
+		setTimer(setInterval(timerCounter, repTime));
 		return () => {
 			clearInterval(timer);
 		};
@@ -33,7 +31,7 @@ const Carousel = ({ data }) => {
 	};
 
 	const onItemMouseLeave = () => {
-		setTimer(setInterval(timerCounter, 5000));
+		setTimer(setInterval(timerCounter, repTime));
 	};
 
 	const onDotClick = (index) => {
@@ -46,20 +44,19 @@ const Carousel = ({ data }) => {
 
 	return (
 		<div className="slides-home">
-			{data.map(({ id, src, alt }) => {
+			{data.map((item) => {
 				return (
 					<CarouselItem
 						onItemMouseEnter={onItemMouseEnter}
 						onItemMouseLeave={onItemMouseLeave}
-						key={id}
-						id={id}
-						src={src}
-						alt={alt}
-						active={currIndex === id - 1 ? true : false}
+						key={item.id}
+						{...item}
+						active={currIndex === item.id - 1 ? true : false}
+						ItemComponent={ItemComponent}
 					/>
 				);
 			})}
-			<div className="carouse-ind-con">
+			<div className={`${indicatorClass}-container`}>
 				{data.map(({ id, src, alt }) => {
 					return (
 						<CarouselIndicator
@@ -69,6 +66,7 @@ const Carousel = ({ data }) => {
 							key={id}
 							id={id}
 							active={currIndex === id - 1 ? true : false}
+							indicatorClass={indicatorClass}
 						/>
 					);
 				})}

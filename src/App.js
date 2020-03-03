@@ -1,14 +1,27 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/header/Header";
-import Carousel from "./components/carousel/Carousel";
+import FeatureSection from "./components/FeatureSection";
+import "./css/app.css";
+import RecentLecture from "./components/recentLecture/RecentLecture";
+import Avatar from "./components/avatar/Avatar";
+import Banner from "./components/banner/Banner";
+import Showcase from "./components/showcase/Showcase";
+import KnowAboutUs from "./components/KnowAboutUs";
+import Footer from "./components/Footer";
 
 function App() {
-	const [carData, setCarData] = useState([]);
+	const [caroData, setCaroData] = useState([]);
+	const [lectureData, setLectureData] = useState([]);
+	const [avatarData, setAvatarData] = useState([]);
 
 	useEffect(() => {
 		(async () => {
-			const res = await import("./staticData/carouselData.json");
-			setCarData(res.default);
+			const caroRes = await import("./staticData/carouselData.json");
+			const lecRes = await import("./staticData/lectureData.json");
+			const avaRes = await import("./staticData/avatarData.json");
+			setCaroData(caroRes.default);
+			setLectureData(lecRes.default);
+			setAvatarData(avaRes.default);
 		})();
 	}, []);
 
@@ -16,7 +29,15 @@ function App() {
 		<React.Fragment>
 			<Header />
 			<div className="main_content">
-				<Carousel data={carData} />
+				<div className="overwrite-index">
+					<Banner data={caroData} />
+					<FeatureSection />
+					<RecentLecture data={lectureData} />
+					<Avatar data={avatarData} />
+					<Showcase />
+					<KnowAboutUs />
+					<Footer />
+				</div>
 			</div>
 		</React.Fragment>
 	);

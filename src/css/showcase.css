@@ -1,0 +1,61 @@
+.overwrite-index .showcases h3 {
+	font-size: 24px;
+}
+
+.overwrite-index .showcases h3::before {
+	left: 50%;
+	margin: 0 0 0 -2.5rem;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: -2.5rem;
+	bottom: 0;
+	content: "";
+	height: 0.1875rem;
+	width: 5rem;
+	background: #d90845;
+	border-radius: 0.1875rem;
+	position: absolute;
+}
+
+.overwrite-index .showcases .lecture-wrap {
+	border: 1px solid #ddd;
+	cursor: pointer;
+	color: #666;
+	height: 100%;
+}
+
+.showcases-partial .lecture-wrap {
+	border: 1px solid #ddd;
+	cursor: pointer;
+	color: #666;
+	height: 100%;
+}
+
+.overwrite-index .showcases .lecture-wrap img {
+	width: 100%;
+}
+
+.overwrite-index .showcases .lecture-wrap h4 {
+	font-size: 18px;
+	height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.showcases-partial .lecture-wrap h4 {
+	font-size: 18px;
+	height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.overwrite-index .showcases .lecture-wrap p {
+	font-size: 14px;
+}
+
+.showcases-partial .lecture-wrap p {
+	font-size: 14px;
+}

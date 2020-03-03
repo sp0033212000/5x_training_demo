@@ -1,25 +1,15 @@
 import React from "react";
 
-const CarouselItem = ({
-	id,
-	src,
-	alt,
-	active,
-	onItemMouseEnter,
-	onItemMouseLeave
-}) => {
-	if (!src) {
-		return null;
-	}
-
+const CarouselItem = (props) => {
+	const ItemComponent = props.ItemComponent;
 	return (
-		<div id={id} className={`slider-item${active ? " active" : ""}`}>
-			<img
-				onMouseEnter={onItemMouseEnter}
-				onMouseLeave={onItemMouseLeave}
-				src={src}
-				alt={alt}
-			/>
+		<div
+			id={props.id}
+			onMouseEnter={props.onItemMouseEnter}
+			onMouseLeave={props.onItemMouseLeave}
+			className={`slider-item${props.active ? " active" : ""}`}
+		>
+			<ItemComponent {...props} />
 		</div>
 	);
 };

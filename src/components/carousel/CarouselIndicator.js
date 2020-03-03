@@ -5,7 +5,8 @@ const CarouselIndicator = ({
 	active,
 	onDotClick,
 	onItemMouseEnter,
-	onItemMouseLeave
+	onItemMouseLeave,
+	indicatorClass
 }) => {
 	const onDotClickHandler = (e) => {
 		const index = e.target.id - 1;
@@ -19,7 +20,7 @@ const CarouselIndicator = ({
 			}}
 			onMouseEnter={onItemMouseEnter}
 			onMouseLeave={onItemMouseLeave}
-			className={`carousel-dot${active ? " active" : ""}`}
+			className={`${indicatorClass}${active ? " active" : ""}`}
 		></div>
 	);
 };
