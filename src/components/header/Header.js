@@ -25,6 +25,7 @@ const Header = () => {
 									className="nav-link is-event"
 									href="https://iamcoding.tw/"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<span style={{ fontSize: "1em" }}>
 										<FontAwesomeIcon icon={far.faGem} />
@@ -37,6 +38,7 @@ const Header = () => {
 									className="nav-link is-event"
 									href="https://astro.5xruby.tw/"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<span style={{ fontSize: "0.9em" }}>
 										<FontAwesomeIcon icon={far.faCompass} />

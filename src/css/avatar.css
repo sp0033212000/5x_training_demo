@@ -53,6 +53,7 @@
 }
 
 .avatar-dot {
+	cursor: pointer;
 	position: relative;
 	float: left;
 	height: 10px;

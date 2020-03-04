@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CarouselItem from "./CarouselItem";
-import silentStateCore from "../../utils/silent.state";
+// import silentStateCore from "../../utils/silent.state";
 import "../../css/carousel.css";
 import CarouselIndicator from "./CarouselIndicator";
 

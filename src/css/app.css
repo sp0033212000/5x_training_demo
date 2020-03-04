@@ -10,7 +10,7 @@
 body {
 	position: relative;
 	width: 100vw;
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 body,
@@ -291,4 +291,22 @@ body .main_content {
 a:hover * {
 	color: #d90845 !important;
 	border-color: #d90845 !important;
+}
+
+.overwrite-footer .scrollup {
+	position: fixed;
+	height: 3.125rem;
+	width: 3.125rem;
+	background-color: #d90845;
+	color: #f7f7f7;
+	border-radius: 50%;
+	bottom: 1.5rem;
+	right: 1.25rem;
+	font-weight: bold;
+	line-height: 3.125rem;
+	font-size: 1.875rem;
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	z-index: 2;
 }

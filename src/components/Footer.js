@@ -1,6 +1,7 @@
 import React from "react";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ScrollToTopButton from "./basicComponent/ScrollToTopButton";
 
 const Footer = () => {
 	return (
@@ -19,6 +20,7 @@ const Footer = () => {
 							href="https://www.cakeresume.com/jobs"
 							className="d-block cakeresume press-img"
 							target="_blank"
+							rel="noopener noreferrer"
 						>
 							<img
 								src="https://5xruby.tw/assets/images/footer/cakeresume-8938f367.png"
@@ -57,7 +59,11 @@ const Footer = () => {
 										<a href="/jobs">工作機會</a>
 									</h5>
 									<h5>
-										<a target="_blank" href="https://github.com/5xRuby">
+										<a
+											target="_blank"
+											rel="noopener noreferrer"
+											href="https://github.com/5xRuby"
+										>
 											開源專案
 										</a>
 									</h5>
@@ -80,21 +86,33 @@ const Footer = () => {
 											<br />
 											<small>Mon - Fri / 09:30 - 22:00</small>
 											<br />
-											<a href="https://www.facebook.com/5xruby" target="_blank">
+											<a
+												href="https://www.facebook.com/5xruby"
+												target="_blank"
+												rel="noopener noreferrer"
+											>
 												<FontAwesomeIcon
 													className="media-icon"
 													icon={fab.faFacebookF}
 													size="xs"
 												/>
 											</a>
-											<a href="https://twitter.com/5xruby" target="_blank">
+											<a
+												href="https://twitter.com/5xruby"
+												target="_blank"
+												rel="noopener noreferrer"
+											>
 												<FontAwesomeIcon
 													className="media-icon big"
 													icon={fab.faTwitter}
 													size="xs"
 												/>
 											</a>
-											<a href="https://github.com/5xruby" target="_blank">
+											<a
+												href="https://github.com/5xruby"
+												target="_blank"
+												rel="noopener noreferrer"
+											>
 												<FontAwesomeIcon
 													className="media-icon big"
 													icon={fab.faGithub}
@@ -111,7 +129,11 @@ const Footer = () => {
 											<br />
 											<p>
 												地址：
-												<a target="_blank" href="https://goo.gl/lz5v93">
+												<a
+													target="_blank"
+													rel="noopener noreferrer"
+													href="https://goo.gl/lz5v93"
+												>
 													10046 台北市中正區衡陽路 7 號 5 樓
 												</a>
 											</p>
@@ -128,11 +150,8 @@ const Footer = () => {
 							<p>台北市短期補習班立案 第 7594 號</p>
 						</div>
 					</div>
+					<ScrollToTopButton scrollStepInPx="50" delayInMs="16.66" />
 				</div>
-			</div>
-
-			<div className="scrollup to-top text-center" id="scrTop">
-				<i className="fa fa-angle-up" id="scrUp" aria-hidden="true"></i>
 			</div>
 		</footer>
 	);

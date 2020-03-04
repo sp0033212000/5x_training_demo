@@ -38,10 +38,11 @@
 
 .carousel-dot-container {
 	position: absolute;
-	width: 160px;
-	bottom: 10px;
+	width: 92px;
+	bottom: 0px;
 	height: 50px;
 	z-index: 1;
+	padding-top: 25px;
 	/* background-color: #ff9; */
 	right: 50%;
 	transform: translate(50%, 0);
@@ -51,10 +52,10 @@
 	cursor: pointer;
 	position: relative;
 	background-color: white;
-	width: 20px;
-	height: 20px;
+	width: 12px;
+	height: 12px;
 	border-radius: 50%;
-	margin: 15px 10px;
+	margin: 0px 5.5px;
 	float: left;
 	z-index: 2;
 }
@@ -66,8 +67,8 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	border-radius: 50%;
-	width: 15px;
-	height: 15px;
+	width: 10px;
+	height: 10px;
 	background-color: #b81939;
 	z-index: 1;
 }
