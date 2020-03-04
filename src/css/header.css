@@ -77,3 +77,7 @@
 		transform: translateY(-14px);
 	}
 }
+
+.overwrite-nav .navbar-nav .nav-link:hover * {
+	color: #d90845;
+}

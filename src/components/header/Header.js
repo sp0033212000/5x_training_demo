@@ -21,7 +21,7 @@ const Header = () => {
 					>
 						<ul className="navbar-nav">
 							<li className="nav-item text-center">
-								<div
+								<a
 									className="nav-link is-event"
 									href="https://iamcoding.tw/"
 									target="_blank"
@@ -30,10 +30,10 @@ const Header = () => {
 										<FontAwesomeIcon icon={far.faGem} />
 									</span>
 									線上課程
-								</div>
+								</a>
 							</li>
 							<li className="nav-item text-center">
-								<div
+								<a
 									className="nav-link is-event"
 									href="https://astro.5xruby.tw/"
 									target="_blank"
@@ -42,10 +42,10 @@ const Header = () => {
 										<FontAwesomeIcon icon={far.faCompass} />
 									</span>
 									ASTRO Camp
-								</div>
+								</a>
 							</li>
 							<li className="nav-item text-center">
-								<div className="nav-link is-event" href="/fullstack-landing">
+								<a className="nav-link is-event" href="/fullstack-landing">
 									<svg
 										className="icon-bolt"
 										xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@ const Header = () => {
 											d="M10.231,5.536H6.239L7.713,1.045A.834.834,0,0,0,6.91,0H1.927A.832.832,0,0,0,1.1.72L0,9.024a.832.832,0,0,0,.823.941H4.927l-1.6,6.73a.83.83,0,0,0,1.526.606l6.09-10.519A.829.829,0,0,0,10.231,5.536Z"
 											transform="translate(0.762 0.75)"
 											fill="none"
-											stroke="#7d7d7d"
+											stroke="currentColor"
 											strokeWidth="1.5"
 										></path>
 									</svg>
@@ -69,32 +69,32 @@ const Header = () => {
 											alt="全方位網頁設計前後端實戰 - 假日班 | 五倍紅寶石"
 										/>
 									</span>
-								</div>
+								</a>
 							</li>
 							<li className="nav-item text-center">
-								<div className="nav-link" href="/talks">
+								<a className="nav-link" href="/talks">
 									短期課程
-								</div>
+								</a>
 							</li>
 							<li className="nav-item text-center">
-								<div className="nav-link" href="https://dev.5xruby.tw">
+								<a className="nav-link" href="https://dev.5xruby.tw">
 									專案開發
-								</div>
+								</a>
 							</li>
 							<li className="nav-item text-center">
-								<div className="nav-link" href="/training">
+								<a className="nav-link" href="/training">
 									企業代訓
-								</div>
+								</a>
 							</li>
 							<li className="nav-item text-center">
-								<div className="nav-link " href="/space">
+								<a className="nav-link " href="/space">
 									空間租借
-								</div>
+								</a>
 							</li>
 							<li className="nav-item text-center">
-								<div className="nav-link " href="/posts">
+								<a className="nav-link " href="/posts">
 									最新消息
-								</div>
+								</a>
 							</li>
 						</ul>
 					</div>

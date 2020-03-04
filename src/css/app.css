@@ -139,14 +139,14 @@ section {
 }
 
 a {
-	color: #333;
+	color: #333 !important;
 	text-decoration: none;
 	background-color: transparent;
 }
 
 a:hover {
 	text-decoration: none;
-	color: #d90845;
+	color: #d90845 !important;
 	cursor: pointer;
 }
 
@@ -286,4 +286,9 @@ body .main_content {
 
 .overwrite-footer .media-icon.big path {
 	transform: translate(25%, 25%) scale(0.5);
+}
+
+a:hover * {
+	color: #d90845 !important;
+	border-color: #d90845 !important;
 }
