@@ -81,3 +81,32 @@
 .overwrite-nav .navbar-nav .nav-link:hover * {
 	color: #d90845;
 }
+
+/* Header button */
+.navbar-toggler:not(:disabled):not(.disabled) {
+	cursor: pointer;
+}
+
+.overwrite-nav .navbar-toggler {
+	background-color: #d90845;
+	padding: 1rem 1.2rem;
+	border-radius: 0rem;
+	border: none;
+	margin-right: -1rem;
+}
+
+.overwrite-nav .icon-bar {
+	width: 2.1875rem;
+	height: 0.125rem;
+	margin: 0.4375rem 0rem;
+	border-radius: 0.0625rem;
+	background-color: #fff;
+	-webkit-transition: 0.1s all;
+	transition: 0.1s all;
+}
+
+@media (max-width: 767px) {
+	.overwrite-nav #mobile-dropdown {
+		border-top: 0.0625rem solid #e7e7e7;
+	}
+}

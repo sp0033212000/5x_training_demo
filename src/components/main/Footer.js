@@ -1,7 +1,7 @@
 import React from "react";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ScrollToTopButton from "./basicComponent/ScrollToTopButton";
+import ScrollToTopButton from "../basicComponent/ScrollToTopButton";
 
 const Footer = () => {
 	return (
@@ -9,7 +9,7 @@ const Footer = () => {
 			<div className="container">
 				<div className="row">
 					<div className="col-12 col-md-3">
-						<a href="/press" className="d-block mb-3 press-img">
+						<a href="/" className="d-block mb-3 press-img">
 							<img
 								src="https://5xruby.tw/assets/images/footer/press-img-3161693e.png"
 								title="媒體報導"
@@ -41,22 +41,22 @@ const Footer = () => {
 							<div className="col-12 mt-3 mt-md-0">
 								<div className="footer-nav">
 									<h5>
-										<a href="/about">關於五倍紅寶石</a>
+										<a href="/">關於五倍紅寶石</a>
 									</h5>
 									<h5>
-										<a href="/press">媒體報導</a>
+										<a href="/">媒體報導</a>
 									</h5>
 									<h5>
-										<a href="/members">團隊成員</a>
+										<a href="/">團隊成員</a>
 									</h5>
 									<h5>
-										<a href="/contacts">聯絡詢價</a>
+										<a href="/">聯絡詢價</a>
 									</h5>
 									<h5>
-										<a href="/faq">常見問題</a>
+										<a href="/">常見問題</a>
 									</h5>
 									<h5>
-										<a href="/jobs">工作機會</a>
+										<a href="/">工作機會</a>
 									</h5>
 									<h5>
 										<a
@@ -68,10 +68,10 @@ const Footer = () => {
 										</a>
 									</h5>
 									<h5>
-										<a href="/privacy-policy">隱私權條款</a>
+										<a href="/">隱私權條款</a>
 									</h5>
 									<h5>
-										<a href="/terms-of-service">服務條款</a>
+										<a href="/">服務條款</a>
 									</h5>
 								</div>
 							</div>

@@ -4,14 +4,14 @@ import BannerImg from "./BannerImg";
 
 const Banner = ({ data }) => {
 	return (
-		<div style={{ height: "431px" }}>
-			<Carousel
-				data={data}
-				repTime={5000}
-				ItemComponent={BannerImg}
-				indicatorClass="carousel-dot"
-			/>
-		</div>
+		// <div style={{ height: "431px" }}>
+		<Carousel
+			data={data}
+			repTime={5000}
+			ItemComponent={BannerImg}
+			indicatorClass="carousel-dot"
+		/>
+		// </div>
 	);
 };
 

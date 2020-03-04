@@ -59,3 +59,9 @@
 .showcases-partial .lecture-wrap p {
 	font-size: 14px;
 }
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.overwrite-index .showcases .case:nth-child(n + 3) {
+		display: none;
+	}
+}

@@ -43,19 +43,22 @@ const Carousel = ({ data, repTime, ItemComponent, indicatorClass }) => {
 	}
 
 	return (
-		<div className="slides-home">
-			{data.map((item) => {
-				return (
-					<CarouselItem
-						onItemMouseEnter={onItemMouseEnter}
-						onItemMouseLeave={onItemMouseLeave}
-						key={item.id}
-						{...item}
-						active={currIndex === item.id - 1 ? true : false}
-						ItemComponent={ItemComponent}
-					/>
-				);
-			})}
+		<div>
+			<div className="slides-home">
+				{data.map((item) => {
+					return (
+						<CarouselItem
+							onItemMouseEnter={onItemMouseEnter}
+							onItemMouseLeave={onItemMouseLeave}
+							key={item.id}
+							{...item}
+							active={currIndex === item.id - 1 ? true : false}
+							ItemComponent={ItemComponent}
+						/>
+					);
+				})}
+				<div className="float-cleaner"></div>
+			</div>
 			<div className={`${indicatorClass}-container`}>
 				{data.map(({ id, src, alt }) => {
 					return (

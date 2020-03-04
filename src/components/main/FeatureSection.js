@@ -1,7 +1,7 @@
 import React from "react";
 
-import SectionTitle from "./basicComponent/SectionTitle";
-import "../css/featureSection.css";
+import SectionTitle from "../basicComponent/SectionTitle";
+import "../../css/featureSection.css";
 
 const FeatureSection = () => {
 	return (

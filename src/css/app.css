@@ -181,6 +181,16 @@ body .main_content {
 	padding-top: 3rem !important;
 }
 
+.float-cleaner {
+	clear: both;
+}
+
+@media (max-width: 767px) {
+	body .main_content {
+		margin-top: 65px;
+	}
+}
+
 .svg-inline--fa {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;

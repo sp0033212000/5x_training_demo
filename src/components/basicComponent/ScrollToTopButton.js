@@ -7,10 +7,7 @@ const ScrollToTopButton = ({ scrollStepInPx, delayInMs }) => {
 
 	useEffect(() => {
 		if (Totaltimes === times) {
-			console.log("done!");
 			clearInterval(intervalId);
-		} else {
-			console.log("not yet");
 		}
 	}, [times]);
 

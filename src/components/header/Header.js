@@ -3,18 +3,20 @@ import newIcon from "../../assets/imgs/navbar/new-301d86be.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import "../../css/header.css";
+import HeaderButton from "./HeaderButton";
 
 const Header = () => {
 	return (
 		<header className="nav-space">
 			<nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-xl navbar-light overwrite-nav">
 				<div className="container-fluid nav-border pl-3 pr-3">
-					<div href="/" className="navbar-brand logo-link">
+					<a href="/" className="navbar-brand logo-link">
 						<img
 							src={require("../../assets/imgs/navbar/logo.png")}
 							alt="網頁設計前後端課程 | 五倍紅寶石"
 						/>
-					</div>
+					</a>
+					<HeaderButton />
 					<div
 						className="collapse navbar-collapse flex-row-reverse "
 						id="mobile-dropdown"
@@ -74,7 +76,7 @@ const Header = () => {
 								</a>
 							</li>
 							<li className="nav-item text-center">
-								<a className="nav-link" href="/talks">
+								<a className="nav-link" href="/">
 									短期課程
 								</a>
 							</li>
@@ -84,17 +86,17 @@ const Header = () => {
 								</a>
 							</li>
 							<li className="nav-item text-center">
-								<a className="nav-link" href="/training">
+								<a className="nav-link" href="/">
 									企業代訓
 								</a>
 							</li>
 							<li className="nav-item text-center">
-								<a className="nav-link " href="/space">
+								<a className="nav-link " href="/">
 									空間租借
 								</a>
 							</li>
 							<li className="nav-item text-center">
-								<a className="nav-link " href="/posts">
+								<a className="nav-link " href="/">
 									最新消息
 								</a>
 							</li>

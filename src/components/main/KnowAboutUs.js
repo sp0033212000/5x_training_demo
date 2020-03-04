@@ -9,11 +9,11 @@ const KnowAboutUs = () => {
 						<h3 className="text-center mt-3 mb-2">想更瞭解我們嗎？</h3>
 						<p className="text text-center mb-4 mt-4">
 							您可以看看
-							<a className="text-red" href="/faq">
+							<a className="text-red" href="/">
 								常見問題
 							</a>
 							或者直接
-							<a className="text-red" href="/contacts">
+							<a className="text-red" href="/">
 								線上洽詢
 							</a>
 							，會有親切的客服人員回答您的問題，
