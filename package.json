@@ -41,5 +41,12 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"devDependencies": {
+		"css-loader": "^3.4.2",
+		"html-webpack-plugin": "^3.2.0",
+		"image-webpack-loader": "^6.0.0",
+		"mini-css-extract-plugin": "^0.9.0",
+		"url-loader": "^3.0.0"
 	}
 }
