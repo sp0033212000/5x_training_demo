@@ -2,6 +2,7 @@ import React from "react";
 import newIcon from "../../assets/imgs/navbar/new-301d86be.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { far } from "@fortawesome/free-regular-svg-icons";
+import logo from "../../assets/imgs/navbar/logo.png";
 import "../../css/header.css";
 import HeaderButton from "./HeaderButton";
 
@@ -11,10 +12,7 @@ const Header = () => {
 			<nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-xl navbar-light overwrite-nav">
 				<div className="container-fluid nav-border pl-3 pr-3">
 					<a href="/" className="navbar-brand logo-link">
-						<img
-							src={require("../../assets/imgs/navbar/logo.png")}
-							alt="網頁設計前後端課程 | 五倍紅寶石"
-						/>
+						<img src={logo} alt="網頁設計前後端課程 | 五倍紅寶石" />
 					</a>
 					<HeaderButton />
 					<div

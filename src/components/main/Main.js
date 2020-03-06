@@ -13,14 +13,15 @@ const Main = () => {
 	const [avatarData, setAvatarData] = useState([]);
 
 	useEffect(() => {
-		(async () => {
-			const caroRes = await import("../../staticData/carouselData.json");
-			const lecRes = await import("../../staticData/lectureData.json");
-			const avaRes = await import("../../staticData/avatarData.json");
-			setCaroData(caroRes.default);
-			setLectureData(lecRes.default);
-			setAvatarData(avaRes.default);
-		})();
+		import("../../staticData/carouselData.json").then((res) =>
+			setCaroData(res.default)
+		);
+		import("../../staticData/lectureData.json").then((res) =>
+			setLectureData(res.default)
+		);
+		import("../../staticData/avatarData.json").then((res) =>
+			setAvatarData(res.default)
+		);
 	}, []);
 
 	return (
