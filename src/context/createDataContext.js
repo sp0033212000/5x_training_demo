@@ -21,7 +21,7 @@ export default (reducer, actions, initialState) => {
   };
 
   Provider.propTypes = {
-    children: PropTypes.func.isRequired
+    children: PropTypes.node.isRequired
   };
 
   return { Context, Provider };

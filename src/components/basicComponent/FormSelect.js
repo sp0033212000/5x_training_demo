@@ -36,7 +36,7 @@ FormSelect.propTypes = {
   id: PropTypes.string,
   required: PropTypes.bool,
   type: PropTypes.string,
-  options: PropTypes.arrayOf,
+  options: PropTypes.arrayOf(PropTypes.object),
   name: PropTypes.string
 };
 

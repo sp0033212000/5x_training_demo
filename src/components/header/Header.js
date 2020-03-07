@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import newIcon from "../../assets/imgs/navbar/new-301d86be.svg";
@@ -11,9 +12,9 @@ const Header = () => {
     <header className="nav-space">
       <nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-xl navbar-light overwrite-nav">
         <div className="container-fluid nav-border pl-3 pr-3">
-          <a href="/" className="navbar-brand logo-link">
+          <Link to="/" className="navbar-brand logo-link">
             <img src={logo} alt="網頁設計前後端課程 | 五倍紅寶石" />
-          </a>
+          </Link>
           <HeaderButton />
           <div
             className="collapse navbar-collapse flex-row-reverse "
@@ -21,33 +22,23 @@ const Header = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item text-center">
-                <a
-                  className="nav-link is-event"
-                  href="https://iamcoding.tw/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link className="nav-link is-event" to="/imcoding">
                   <span style={{ fontSize: "1em" }}>
                     <FontAwesomeIcon icon={far.faGem} />
                   </span>
                   線上課程
-                </a>
+                </Link>
               </li>
               <li className="nav-item text-center">
-                <a
-                  className="nav-link is-event"
-                  href="https://astro.5xruby.tw/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link className="nav-link is-event" to="/astro">
                   <span style={{ fontSize: "0.9em" }}>
                     <FontAwesomeIcon icon={far.faCompass} />
                   </span>
                   ASTRO Camp
-                </a>
+                </Link>
               </li>
               <li className="nav-item text-center">
-                <a className="nav-link is-event" href="/fullstack-landing">
+                <Link className="nav-link is-event" to="/fullstack-landing">
                   <svg
                     className="icon-bolt"
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,32 +62,32 @@ const Header = () => {
                       alt="全方位網頁設計前後端實戰 - 假日班 | 五倍紅寶石"
                     />
                   </span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item text-center">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/talks">
                   短期課程
-                </a>
+                </Link>
               </li>
               <li className="nav-item text-center">
-                <a className="nav-link" href="https://dev.5xruby.tw">
+                <Link className="nav-link" to="/dev">
                   專案開發
-                </a>
+                </Link>
               </li>
               <li className="nav-item text-center">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/training">
                   企業代訓
-                </a>
+                </Link>
               </li>
               <li className="nav-item text-center">
-                <a className="nav-link " href="/">
+                <Link className="nav-link " to="/space">
                   空間租借
-                </a>
+                </Link>
               </li>
               <li className="nav-item text-center">
-                <a className="nav-link " href="/">
+                <Link className="nav-link " to="/posts">
                   最新消息
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

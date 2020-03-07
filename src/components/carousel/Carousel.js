@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import CarouselItem from "./CarouselItem";
 import "../../css/carousel.css";
@@ -7,15 +7,18 @@ import CarouselIndicator from "./CarouselIndicator";
 const Carousel = ({ data, repTime, ItemComponent, indicatorClass }) => {
   const [currIndex, setCurrIndex] = useState(0);
   const [timer, setTimer] = useState(null);
+  const isCanceled = useRef(false);
 
   const timerCounter = () => {
-    setCurrIndex(prevCurrIndex => {
-      let newIndex = prevCurrIndex + 1;
-      if (newIndex === data.length) {
-        newIndex = 0;
-      }
-      return newIndex;
-    });
+    if (!isCanceled.current) {
+      setCurrIndex(prevCurrIndex => {
+        let newIndex = prevCurrIndex + 1;
+        if (newIndex === data.length) {
+          newIndex = 0;
+        }
+        return newIndex;
+      });
+    }
   };
 
   useEffect(() => {
@@ -23,6 +26,7 @@ const Carousel = ({ data, repTime, ItemComponent, indicatorClass }) => {
     setTimer(setInterval(timerCounter, repTime));
     return () => {
       clearInterval(timer);
+      isCanceled.current = true;
     };
   }, [data]);
 

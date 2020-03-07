@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ScrollToTopButton from "../basicComponent/ScrollToTopButton";
@@ -50,7 +51,7 @@ const Footer = () => {
                     <a href="/">團隊成員</a>
                   </h5>
                   <h5>
-                    <a href="/">聯絡詢價</a>
+                    <Link to="/contacts">聯絡詢價</Link>
                   </h5>
                   <h5>
                     <a href="/">常見問題</a>
