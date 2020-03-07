@@ -1,36 +1,40 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const CarouselIndicator = ({
-  id,
-  active,
-  onDotClick,
-  onItemMouseEnter,
-  onItemMouseLeave,
-  indicatorClass
-}) => {
+const CarouselIndicator = props => {
+  const {
+    id,
+    active,
+    onDotClick,
+    onItemMouseEnter,
+    onItemMouseLeave,
+    indicatorClass
+  } = props;
   const onDotClickHandler = e => {
     const index = e.target.id - 1;
+    console.log(e.target);
+    console.log(index);
     onDotClick(index);
   };
   return (
-    <button
-      type="button"
-      id={id}
-      onClick={e => {
-        onDotClickHandler(e);
-      }}
-      onMouseEnter={onItemMouseEnter}
-      onMouseLeave={onItemMouseLeave}
-      style={{ display: "contents" }}
-    >
-      <div className={`${indicatorClass}${active ? " active" : ""}`} />
-    </button>
+    <div onMouseEnter={onItemMouseEnter} onMouseLeave={onItemMouseLeave}>
+      <button
+        type="button"
+        id={id}
+        onClick={onDotClickHandler}
+        style={{ display: "contents" }}
+      >
+        <div
+          id={id}
+          className={`${indicatorClass}${active ? " active" : ""}`}
+        />
+      </button>
+    </div>
   );
 };
 
 CarouselIndicator.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   active: PropTypes.bool.isRequired,
   onDotClick: PropTypes.func.isRequired,
   onItemMouseEnter: PropTypes.func.isRequired,

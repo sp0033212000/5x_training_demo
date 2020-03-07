@@ -23,7 +23,7 @@ const CarouselItem = props => {
 
 CarouselItem.propTypes = {
   ItemComponent: PropTypes.func.isRequired,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   onItemMouseEnter: PropTypes.func.isRequired,
   onItemMouseLeave: PropTypes.func.isRequired,
   active: PropTypes.bool.isRequired

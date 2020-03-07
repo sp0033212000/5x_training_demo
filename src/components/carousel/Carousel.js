@@ -35,6 +35,7 @@ const Carousel = ({ data, repTime, ItemComponent, indicatorClass }) => {
   };
 
   const onDotClick = index => {
+    clearInterval(timer);
     setCurrIndex(index);
   };
 

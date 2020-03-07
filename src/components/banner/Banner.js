@@ -4,6 +4,9 @@ import Carousel from "../carousel/Carousel";
 import BannerImg from "./BannerImg";
 
 const Banner = ({ data }) => {
+  if (data.length === 0) {
+    return null;
+  }
   return (
     // <div style={{ height: "431px" }}>
     <Carousel
