@@ -320,3 +320,8 @@ a:hover * {
 	transition: all 0.3s;
 	z-index: 2;
 }
+
+.overwrite-footer .scrollup:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

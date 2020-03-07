@@ -1,0 +1,7 @@
+{
+  "singleQuote": false,
+  "bracketSpacing": true,
+  "rules": {
+    "no-tabs": ["error", { "allowIndentationTabs": true }]
+  }
+}

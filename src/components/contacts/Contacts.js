@@ -6,24 +6,24 @@ import ContactInfo from "./ContactInfo";
 import ContactsForm from "./ContactsForm";
 
 const Contacts = () => {
-	return (
-		<React.Fragment>
-			<ContactsHeader />
-			<div className="mt-5 mb-5 pb-5 overwrite-contacts">
-				<div className="container">
-					<div className="row">
-						<ContactInfo />
-						<div className="col-12 col-sm-12 col-md-6 col-lg-6">
-							<div className="mb-3">
-								任何問題都歡迎您透過以下表單詢問，我們會盡快回覆您！
-							</div>
-							<ContactsForm />
-						</div>
-					</div>
-				</div>
-			</div>
+  return (
+    <>
+      <ContactsHeader />
+      <div className="mt-5 mb-5 pb-5 overwrite-contacts">
+        <div className="container">
+          <div className="row">
+            <ContactInfo />
+            <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div className="mb-3">
+                任何問題都歡迎您透過以下表單詢問，我們會盡快回覆您！
+              </div>
+              <ContactsForm />
+            </div>
+          </div>
+        </div>
+      </div>
 
-			{/* <iframe name="processForm" style="display: none"></iframe>
+      {/* <iframe name="processForm" style="display: none"></iframe>
 <script type="text/javascript">
   $(function() {
     $('#new_contact').submit(function() {
@@ -32,8 +32,8 @@ const Contacts = () => {
     });
   });
 </script> */}
-		</React.Fragment>
-	);
+    </>
+  );
 };
 
 export default Contacts;
