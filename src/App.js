@@ -23,15 +23,18 @@ function App() {
       <Header />
       <div className="main_content">
         <Switch>
-          <Route path="/" exact component={Main} />
-          <Route path="/imcoding" component={ImCoding} />
-          <Route path="/astro" component={AstroCamp} />
-          <Route path="/fullstack-landing" component={FullstackLanding} />
-          <Route path="/talks" component={Talks} />
-          <Route path="/dev" component={Development} />
-          <Route path="/training" component={Training} />
-          <Route path="/space" component={Space} />
-          <Route path="/posts" component={Posts} />
+          <Route path="/5x_training_demo/" exact component={Main} />
+          <Route path="/5x_training_demo/imcoding" component={ImCoding} />
+          <Route path="/5x_training_demo/astro" component={AstroCamp} />
+          <Route
+            path="/5x_training_demo/fullstack-landing"
+            component={FullstackLanding}
+          />
+          <Route path="/5x_training_demo/talks" component={Talks} />
+          <Route path="/5x_training_demo/dev" component={Development} />
+          <Route path="/5x_training_demo/training" component={Training} />
+          <Route path="/5x_training_demo/space" component={Space} />
+          <Route path="/5x_training_demo/posts" component={Posts} />
           <FormProvider>
             <Route path="/contacts" component={Contacts} />
           </FormProvider>
