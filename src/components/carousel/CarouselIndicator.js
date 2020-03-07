@@ -12,8 +12,6 @@ const CarouselIndicator = props => {
   } = props;
   const onDotClickHandler = e => {
     const index = e.target.id - 1;
-    console.log(e.target);
-    console.log(index);
     onDotClick(index);
   };
   return (
