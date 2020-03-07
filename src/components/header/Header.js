@@ -12,7 +12,7 @@ const Header = () => {
     <header className="nav-space">
       <nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-xl navbar-light overwrite-nav">
         <div className="container-fluid nav-border pl-3 pr-3">
-          <Link to="/5x_training_demo/" className="navbar-brand logo-link">
+          <Link to="/" className="navbar-brand logo-link">
             <img src={logo} alt="網頁設計前後端課程 | 五倍紅寶石" />
           </Link>
           <HeaderButton />
@@ -22,10 +22,7 @@ const Header = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item text-center">
-                <Link
-                  className="nav-link is-event"
-                  to="/5x_training_demo/imcoding"
-                >
+                <Link className="nav-link is-event" to="/imcoding">
                   <span style={{ fontSize: "1em" }}>
                     <FontAwesomeIcon icon={far.faGem} />
                   </span>
@@ -33,10 +30,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item text-center">
-                <Link
-                  className="nav-link is-event"
-                  to="/5x_training_demo/astro"
-                >
+                <Link className="nav-link is-event" to="/astro">
                   <span style={{ fontSize: "0.9em" }}>
                     <FontAwesomeIcon icon={far.faCompass} />
                   </span>
@@ -44,10 +38,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item text-center">
-                <Link
-                  className="nav-link is-event"
-                  to="/5x_training_demo/fullstack-landing"
-                >
+                <Link className="nav-link is-event" to="/fullstack-landing">
                   <svg
                     className="icon-bolt"
                     xmlns="http://www.w3.org/2000/svg"
@@ -74,27 +65,27 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item text-center">
-                <Link className="nav-link" to="/5x_training_demo/talks">
+                <Link className="nav-link" to="/talks">
                   短期課程
                 </Link>
               </li>
               <li className="nav-item text-center">
-                <Link className="nav-link" to="/5x_training_demo/dev">
+                <Link className="nav-link" to="/dev">
                   專案開發
                 </Link>
               </li>
               <li className="nav-item text-center">
-                <Link className="nav-link" to="/5x_training_demo/training">
+                <Link className="nav-link" to="/training">
                   企業代訓
                 </Link>
               </li>
               <li className="nav-item text-center">
-                <Link className="nav-link " to="/5x_training_demo/space">
+                <Link className="nav-link " to="/space">
                   空間租借
                 </Link>
               </li>
               <li className="nav-item text-center">
-                <Link className="nav-link " to="/5x_training_demo/posts">
+                <Link className="nav-link " to="/posts">
                   最新消息
                 </Link>
               </li>

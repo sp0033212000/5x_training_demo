@@ -51,7 +51,7 @@ const Footer = () => {
                     <a href="/">團隊成員</a>
                   </h5>
                   <h5>
-                    <Link to="/5x_training_demo/contacts">聯絡詢價</Link>
+                    <Link to="/contacts">聯絡詢價</Link>
                   </h5>
                   <h5>
                     <a href="/">常見問題</a>
