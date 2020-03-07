@@ -7,3 +7,11 @@ cache:
 script:
   - yarn lint
   - yarn build
+
+  deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $github_token
+    local_dir: bundle
+    on:
+        branch: master

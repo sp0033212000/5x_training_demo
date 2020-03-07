@@ -2,6 +2,7 @@
   "name": "5x_training_demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sp0033212000.github.io/5x_training_demo",
   "engines": {
     "node": "12.15.0"
   },
