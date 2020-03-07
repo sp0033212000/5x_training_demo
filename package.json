@@ -29,7 +29,7 @@
     "clean": "rimraf bundle",
     "build": "NODE_ENV=production npm run clean && webpack -p",
     "serve": "webpack-dev-server",
-    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages",
+    "deploy": "npm run build && git subtree push --prefix bundle origin gh-pages",
     "start": "node server.js",
     "lint": "eslint --ext .jsx,.js src/"
   },
