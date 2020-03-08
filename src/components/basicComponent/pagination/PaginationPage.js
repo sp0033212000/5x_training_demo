@@ -12,11 +12,19 @@ const PaginationPage = ({
   return (
     <fragment>
       <PageComponent currentData={currentData} />
-      <PaginationPageNavi
-        onNaviButtonClick={onNaviButtonClick}
-        currentPage={currentPage}
-        totalPage={totalPage}
-      />
+      <div
+        style={{
+          left: "50%",
+          width: "fit-content",
+          transform: "translate(-50%, 0px)"
+        }}
+      >
+        <PaginationPageNavi
+          onNaviButtonClick={onNaviButtonClick}
+          currentPage={currentPage}
+          totalPage={totalPage}
+        />
+      </div>
     </fragment>
   );
 };
