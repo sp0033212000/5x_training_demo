@@ -1,6 +1,6 @@
 * {
-  -webkit-transition-duration: 0.15s;
-  transition-duration: 0.15s;
+  /* -webkit-transition-duration: 0.15s; */
+  /* transition-duration: 0.15s; */
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -138,15 +138,20 @@ section {
   display: block;
 }
 
-a {
+a,
+a > svg,
+a > svg > * {
   color: #333 !important;
   text-decoration: none;
   background-color: transparent;
 }
 
-a:hover {
+a:hover,
+a:hover > svg,
+a:hover > svg > * {
   text-decoration: none;
   color: #d90845 !important;
+  border-color: #d90845 !important;
   cursor: pointer;
 }
 
@@ -296,11 +301,6 @@ body .main_content {
 
 .overwrite-footer .media-icon.big path {
   transform: translate(25%, 25%) scale(0.5);
-}
-
-a:hover * {
-  color: #d90845 !important;
-  border-color: #d90845 !important;
 }
 
 .overwrite-footer .scrollup {
