@@ -27,7 +27,8 @@ module.exports = {
             loader: "url-loader",
             options: {
               limit: 40000,
-              output: "/assest/imgs/"
+              name: "assets/[path][name].[ext]",
+              context: path.resolve(__dirname, "src/assets")
             }
           },
           "image-webpack-loader"

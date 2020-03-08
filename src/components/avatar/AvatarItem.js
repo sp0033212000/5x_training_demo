@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import * as imageLoaderHelper from "../../helper/imageLoaderHelper";
 
 const AvatarItem = ({ intro, avatar, job, src }) => {
   return (
@@ -7,7 +8,7 @@ const AvatarItem = ({ intro, avatar, job, src }) => {
       <div className="d-flex flex-nowrap no-gutters mx-auto justify-content-center">
         <div className="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
           <img
-            src={src}
+            src={imageLoaderHelper[src]}
             className="d-block"
             alt={`程式課程推薦 | ${avatar} | 五倍紅寶石`}
           />
