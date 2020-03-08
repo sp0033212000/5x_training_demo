@@ -1,5 +1,7 @@
 const express = require("express");
 const path = require("path");
+const https = require("https");
+const fs = require("fs");
 
 const app = express();
 
@@ -15,6 +17,14 @@ if (process.env.NODE_ENV !== "production") {
   });
 }
 
-app.listen(process.env.PORT || 3030, () => {
-  console.log("Listening");
-});
+https
+  .createServer(
+    {
+      key: fs.readFileSync("./private/pillaAuth-key.pem"),
+      cert: fs.readFileSync("./private/pillaAuth-cert.pem")
+    },
+    app
+  )
+  .listen(process.env.PORT || 3030, () => {
+    console.log("Listening");
+  });

@@ -14,7 +14,9 @@
     "import/no-named-as-default": 0,
     "indent": "off",
     "jsx-a11y/heading-has-content": "off",
-    "jsx-a11y/anchor-has-content": "off"
+    "jsx-a11y/anchor-has-content": "off",
+    "no-console": "off",
+    "spaced-comment": "off"
   },
   "parserOptions": {
     "sourceType": "module",

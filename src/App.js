@@ -1,6 +1,8 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
 import { Switch, Route, HashRouter } from "react-router-dom";
 import { Provider as FormProvider } from "./context/FormContext";
+import "@babel/polyfill";
 
 import "./css/app.css";
 
@@ -15,7 +17,7 @@ import Talks from "./components/fakePage/Talks";
 import Development from "./components/fakePage/Development";
 import Training from "./components/fakePage/Training";
 import Space from "./components/fakePage/Space";
-import Posts from "./components/fakePage/Posts";
+import Posts from "./components/posts/Posts";
 
 function App() {
   return (
