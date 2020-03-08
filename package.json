@@ -31,7 +31,6 @@
     "clean": "rimraf bundle",
     "build": "npm run clean && webpack -p",
     "serve": "webpack-dev-server",
-    "deploy": "npm run build && git subtree push --prefix bundle origin gh-pages",
     "start": "node server.js",
     "lint": "eslint --ext .jsx,.js src/"
   },
