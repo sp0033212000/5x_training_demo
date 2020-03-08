@@ -1,3 +1,5 @@
+# gh-pages: [https://sp0033212000.github.io/5x_training_demo/#/](https://sp0033212000.github.io/5x_training_demo/#/)
+
 ## Available Scripts
 
 In the project directory, you can run:
