@@ -2,20 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const CarouselItem = props => {
-  const {
-    ItemComponent,
-    id,
-    onItemMouseEnter,
-    onItemMouseLeave,
-    active
-  } = props;
+  const { ItemComponent, id, active } = props;
   return (
-    <div
-      id={id}
-      onMouseEnter={onItemMouseEnter}
-      onMouseLeave={onItemMouseLeave}
-      className={`slider-item${active ? " active" : ""}`}
-    >
+    <div id={id} className={`slider-item${active ? " active" : ""}`}>
       <ItemComponent {...props} />
     </div>
   );
@@ -24,8 +13,6 @@ const CarouselItem = props => {
 CarouselItem.propTypes = {
   ItemComponent: PropTypes.func.isRequired,
   id: PropTypes.number.isRequired,
-  onItemMouseEnter: PropTypes.func.isRequired,
-  onItemMouseLeave: PropTypes.func.isRequired,
   active: PropTypes.bool.isRequired
 };
 

@@ -8,6 +8,7 @@ import "../../css/avatar.css";
 
 const Avatar = props => {
   const { data } = props;
+
   return (
     <div className="avatar-carousel light-grey-bg pb-5">
       <SectionTitle subcl="section-title pt-5 " title="網頁課程推薦" />

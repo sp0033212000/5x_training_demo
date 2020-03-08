@@ -22,6 +22,7 @@ const Carousel = ({ data, repTime, ItemComponent, indicatorClass }) => {
   };
 
   useEffect(() => {
+    isCanceled.current = false;
     clearInterval(timer);
     setTimer(setInterval(timerCounter, repTime));
     return () => {
@@ -48,13 +49,11 @@ const Carousel = ({ data, repTime, ItemComponent, indicatorClass }) => {
   }
 
   return (
-    <div>
+    <div onMouseEnter={onItemMouseEnter} onMouseLeave={onItemMouseLeave}>
       <div className="slides-home">
         {data.map(item => {
           return (
             <CarouselItem
-              onItemMouseEnter={onItemMouseEnter}
-              onItemMouseLeave={onItemMouseLeave}
               key={item.id}
               {...item}
               active={currIndex === item.id - 1}
@@ -68,8 +67,6 @@ const Carousel = ({ data, repTime, ItemComponent, indicatorClass }) => {
         {data.map(({ id }) => {
           return (
             <CarouselIndicator
-              onItemMouseEnter={onItemMouseEnter}
-              onItemMouseLeave={onItemMouseLeave}
               onDotClick={onDotClick}
               key={id}
               id={id}
