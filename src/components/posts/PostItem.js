@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const PostItem = ({ title, body, src, id }) => {
-  console.log(id);
   return (
     <div className="card">
       <img src={src} className="card-img-top" alt="..." />
