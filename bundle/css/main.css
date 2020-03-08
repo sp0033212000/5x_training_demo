@@ -912,9 +912,3 @@ h1.title::before {
 	line-height: inherit;
 }
 
-.pagination {
-  left: 50%;
-  width: fit-content;
-  transform: translate(-50%, 0px);
-}
-
