@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import * as imageLoaderHelper from "../../helper/imageLoaderHelper";
+import imageLoaderHelper from "../../helper/imageLoaderHelper";
 
 const AvatarItem = ({ intro, avatar, job, src }) => {
   return (
