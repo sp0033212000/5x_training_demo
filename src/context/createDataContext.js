@@ -10,7 +10,9 @@ export default (reducer, actions, initialState) => {
     const boundActions = {};
 
     Object.keys(actions).forEach(key => {
-      boundActions[key] = actions[key](dispatch);
+      boundActions[key] = ((_action, _dispatch) => {
+        return (...argument) => _action(...argument)(_dispatch);
+      })(actions[key], dispatch);
     });
 
     return (

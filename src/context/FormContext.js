@@ -13,7 +13,7 @@ const formReducer = (state, { type, payload }) => {
   }
 };
 
-const formValOnChange = dispatch => (name, value, error) => {
+const formValOnChange = (name, value, error) => dispatch => {
   const data = {};
   data[name] = {
     value,
