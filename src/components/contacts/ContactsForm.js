@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import Modal from "react-modal";
+import { useHistory } from "react-router-dom";
 import { Context as FormContext } from "../../context/FormContext";
 import ReCaptcha from "./ReCaptcha";
 import FormConcent from "../basicComponent/FormConcent";
@@ -56,6 +57,7 @@ const MODAL_STYLE = {
 };
 
 const ContactsForm = () => {
+  const history = useHistory();
   const { state } = useContext(FormContext);
   const [showModal, setShowModal] = useState(false);
 
@@ -98,9 +100,13 @@ const ContactsForm = () => {
         style={MODAL_STYLE}
       >
         {renderModalContect()}
-        <a href="/" className="btn btn-red btn-block">
+        <button
+          onClick={() => history.push("/")}
+          type="button"
+          className="btn btn-red btn-block"
+        >
           確定
-        </a>
+        </button>
       </Modal>
     </form>
   );

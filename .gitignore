@@ -9,7 +9,9 @@
 /coverage
 
 # production
-/build
+/bundle
+
+/private
 
 # misc
 .DS_Store
